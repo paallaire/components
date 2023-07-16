@@ -1,0 +1,26 @@
+
+
+.c-accordion {
+  background-color: blue;
+  color: white;
+
+  &__content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-in-out;
+  }
+  
+  &__content-wrapper {
+    overflow: hidden;
+  }
+
+}
+
+/* is-active */
+.c-accordion.is-active {
+
+  .c-accordion__content {
+    grid-template-rows: 1fr;
+  }
+
+}
