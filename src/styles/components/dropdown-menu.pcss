@@ -1,0 +1,23 @@
+
+
+.c-dropdown-menu {
+
+  &__button {}
+  
+  &__menu {
+    display: none;
+
+    a:focus {
+      background-color: red;
+    }
+  }
+
+  &.is-open {
+    .c-dropdown-menu__menu {
+      display: block;
+    }
+  }
+
+}
+
+
