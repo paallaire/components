@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,56 +10,130 @@
 
 <body>
 
-  <h2>Accordion</h2>
+  <main role="main">
 
-  <div class="c-accordion">
-    <button class="c-accordion__button" aria-expanded="false">Titre 1</button>
-    <div class="c-accordion__content" data-id="worold">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione corporis nemo magnam distinctio vitae, quibusdam impedit dolorem,
-        accusantium eius quo eligendi, repudiandae iste incidunt! Alias est ipsum doloribus? Perspiciatis.</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione corporis nemo magnam distinctio vitae, quibusdam impedit dolorem,
-        accusantium eius quo eligendi, repudiandae iste incidunt! Alias est ipsum doloribus? Perspiciatis.</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione corporis nemo magnam distinctio vitae, quibusdam impedit dolorem,
-        accusantium eius quo eligendi, repudiandae iste incidunt! Alias est ipsum doloribus? Perspiciatis.</p>
+    <h1>Components</h1>
+
+    <h2>Accordion</h2>
+
+    <div class="c-accordion">
+      <button class="c-accordion__button" aria-expanded="false">Titre 1</button>
+      <div class="c-accordion__content" data-id="worold">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione corporis nemo magnam distinctio vitae, quibusdam impedit
+          dolorem,
+          accusantium eius quo eligendi, repudiandae iste incidunt! Alias est ipsum doloribus? Perspiciatis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione corporis nemo magnam distinctio vitae, quibusdam impedit
+          dolorem,
+          accusantium eius quo eligendi, repudiandae iste incidunt! Alias est ipsum doloribus? Perspiciatis.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus ratione corporis nemo magnam distinctio vitae, quibusdam impedit
+          dolorem,
+          accusantium eius quo eligendi, repudiandae iste incidunt! Alias est ipsum doloribus? Perspiciatis.</p>
+      </div>
     </div>
-  </div>
-  <div class="c-accordion">
-    <button class="c-accordion__button" aria-expanded="false">Titre 2</button>
-    <div class="c-accordion__content" data-id="salut">
-      Contenu 2
+    <div class="c-accordion">
+      <button class="c-accordion__button" aria-expanded="false">Titre 2</button>
+      <div class="c-accordion__content" data-id="salut">
+        Contenu 2
+      </div>
     </div>
-  </div>
-  <div class="c-accordion">
-    <button class="c-accordion__button" aria-expanded="false">Titre 3</button>
-    <div class="c-accordion__content" data-id="bye">
-      Contenu 3
+    <div class="c-accordion">
+      <button class="c-accordion__button" aria-expanded="false">Titre 3</button>
+      <div class="c-accordion__content" data-id="bye">
+        Contenu 3
+      </div>
     </div>
-  </div>
+
+
+    <h2>Dropdown menu</h2>
+
+    <div class="c-dropdown-menu" id="dd-options">
+      <button class="c-dropdown-menu__button">Toggle Dropdown</button>
+      <ul class="c-dropdown-menu__menu">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+      </ul>
+    </div>
+
+    <div class="c-dropdown-menu" id="dd-options-2">
+      <button class="c-dropdown-menu__button">Toggle Dropdown</button>
+      <ul class="c-dropdown-menu__menu">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+      </ul>
+    </div>
 
 
 
-  <h2>Dropdown menu</h2>
+    <h2>Tabs</h2>
 
-  <div class="c-dropdown-menu" id="dd-options">
-    <button class="c-dropdown-menu__button">Toggle Dropdown</button>
-    <ul class="c-dropdown-menu__menu">
-      <li><a href="#">Option 1</a></li>
-      <li><a href="#">Option 2</a></li>
-      <li><a href="#">Option 3</a></li>
-    </ul>
-  </div>
+    <div id="tab-water" class="tabs">
+      <div class="tab-list" role="tablist">
+        <button class="tab">Tab 1</button>
+        <button class="tab">Tab 2</button>
+        <button class="tab">Tab 3</button>
+      </div>
 
-  <div class="c-dropdown-menu" id="dd-options-2">
-    <button class="c-dropdown-menu__button">Toggle Dropdown</button>
-    <ul class="c-dropdown-menu__menu">
-      <li><a href="#">Option 1</a></li>
-      <li><a href="#">Option 2</a></li>
-      <li><a href="#">Option 3</a></li>
-    </ul>
-  </div>
+      <div class="tab-content">
+        <h2>Content of Tab 1</h2>
+        <p>Lorem ipsum dolor sit amet, <a href="#">wow</a> consectetur adipisicing elit. Numquam ducimus sunt commodi alias similique error odit,
+          facere
+          labore recusandae beatae eveniet voluptas porro facilis sit magnam harum hic, temporibus id.</p>
+        <button>Lorem more</button>
+      </div>
+      <div class="tab-content">
+        <h2>Content of Tab 2</h2>
+        <p>Lorem ipsum dolor sit amet, <a href="#">wow</a> consectetur adipisicing elit. Numquam ducimus sunt commodi alias similique error odit,
+          facere
+          labore recusandae beatae eveniet voluptas porro facilis sit magnam harum hic, temporibus id.</p>
+        <button>Lorem more</button>
+      </div>
+      <div class="tab-content">
+        <h2>Content of Tab 3</h2>
+        <p>Lorem ipsum dolor sit amet, <a href="#">wow</a> consectetur adipisicing elit. Numquam ducimus sunt commodi alias similique error odit,
+          facere
+          labore recusandae beatae eveniet voluptas porro facilis sit magnam harum hic, temporibus id.</p>
+        <p>Lorem ipsum dolor sit amet, <a href="#">wow</a> consectetur adipisicing elit. Numquam ducimus sunt commodi alias similique error odit,
+          facere
+          labore recusandae beatae eveniet voluptas porro facilis sit magnam harum hic, temporibus id.</p>
+        <button>Lorem more</button>
+      </div>
+    </div>
 
+    <div id="tab-fire" class="tabs" data-initial-tab="1">
+      <div class="tab-list" role="tablist">
+        <button class="tab">Tab 1</button>
+        <button class="tab">Tab 2</button>
+        <button class="tab">Tab 3</button>
+      </div>
 
-
+      <div class="tab-content">
+        <h2>Content of Tab 1</h2>
+        <p>Lorem ipsum dolor sit amet, <a href="#">wow</a> consectetur adipisicing elit. Numquam ducimus sunt commodi alias similique error odit,
+          facere
+          labore recusandae beatae eveniet voluptas porro facilis sit magnam harum hic, temporibus id.</p>
+        <button>Lorem more</button>
+      </div>
+      <div class="tab-content">
+        <h2>Content of Tab 2</h2>
+        <p>Lorem ipsum dolor sit amet, <a href="#">wow</a> consectetur adipisicing elit. Numquam ducimus sunt commodi alias similique error odit,
+          facere
+          labore recusandae beatae eveniet voluptas porro facilis sit magnam harum hic, temporibus id.</p>
+        <button>Lorem more</button>
+      </div>
+      <div class="tab-content">
+        <h2>Content of Tab 3</h2>
+        <p>Lorem ipsum dolor sit amet, <a href="#">wow</a> consectetur adipisicing elit. Numquam ducimus sunt commodi alias similique error odit,
+          facere
+          labore recusandae beatae eveniet voluptas porro facilis sit magnam harum hic, temporibus id.</p>
+        <p>Lorem ipsum dolor sit amet, <a href="#">wow</a> consectetur adipisicing elit. Numquam ducimus sunt commodi alias similique error odit,
+          facere
+          labore recusandae beatae eveniet voluptas porro facilis sit magnam harum hic, temporibus id.</p>
+        <button>Lorem more</button>
+      </div>
+    </div>
+  </main>
 
   <script type="module" src="/src/main.ts"></script>
 </body>
