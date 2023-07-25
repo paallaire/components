@@ -1,5 +1,3 @@
-// tabs.ts (fichier du module)
-
 export class Tabs {
   private container: HTMLElement;
   private tabs: NodeListOf<HTMLButtonElement>;
